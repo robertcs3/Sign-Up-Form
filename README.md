@@ -1,1 +1,1 @@
-# Sign-Up-Form
+This is a project for the full stack javascript course for [The Odin Project](https://www.theodinproject.com/)
