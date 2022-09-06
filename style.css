@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    background-image: url(nightsky.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    min-width: 1200px;
+}
+
+form{
+    
+}
+
+
+
+
+
+
+
