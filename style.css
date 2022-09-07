@@ -6,31 +6,46 @@
     --logo: calc((100vw - 1200px ));
 }
 
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family: "Norse-Bold";
+    src:url('/Norse-Bold.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
+
+#logo h1{
+    font-size: 5rem;
+    font-family: "Norse-Bold";
+}
 
 
 body{
     height: 100vh;
-    
     background-image: url(nightsky.jpg);
     background-size: cover;
     display: flex;
     justify-content: flex-end;
+    overflow-y: hidden;
 }
 
 img{
     height: 200px;
     width: 200px;
-    position: relative;
-    top: 100px;
-
 }
 
 #logo{
+    overflow: auto;
+    overflow-y: hidden;
+    position: relative;
+    top: 9rem;
     display: flex;
+    height: calc(var(--header) / 2 );
     min-width: var(--logo);
     justify-content: center;
-    overflow: auto;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 
