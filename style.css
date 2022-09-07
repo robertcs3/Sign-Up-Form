@@ -1,3 +1,8 @@
+:root{
+    color: white;
+}
+
+
 body{
     height: 100vh;
     background-image: url(nightsky.jpg);
@@ -6,21 +11,71 @@ body{
     justify-content: flex-end;
 }
 
+.header h1{
+    font-size: 2rem;
+    text-shadow: 1px 1px;
+}
+
+.second-line {
+    padding-top: 3rem;
+}
+
+.header em{
+    font-style: italic;
+}
+
 
 .body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-    min-width: 1200px;
-}
-
-form{
-    
+    justify-content:space-evenly;
+    align-items:flex-start;
+    background-color: black;
+    width: 1200px;
+    padding-left: 2rem;
 }
 
 
+
+fieldset legend{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px;
+
+}
+
+.form{
+    width: 100%;
+    margin-left: -2rem;
+    padding: 3rem 0 3rem 2rem;
+    box-shadow: 0 3px 10px 3px white;
+    background-color: dark
+}
+
+
+fieldset{
+    display: flex;
+    gap: 6rem;
+}
+
+.form label {
+    font-size: small;
+}
+
+.left div{
+    padding-top: 1rem;
+}
+
+.right div{
+    padding-top: 1rem;
+}
+
+
+
+input{
+    display: block;
+    width: 100%;
+}
 
 
 
