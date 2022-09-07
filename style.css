@@ -1,15 +1,38 @@
 :root{
     color: white;
+    --form: 303px;
+    --header: calc((100vh - (var(--form))) / 2);
+    --bottom: calc((100vh - (var(--form))) / 2);
+    --logo: calc((100vw - 1200px ));
 }
+
+
 
 
 body{
     height: 100vh;
+    
     background-image: url(nightsky.jpg);
     background-size: cover;
     display: flex;
     justify-content: flex-end;
 }
+
+img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 100px;
+
+}
+
+#logo{
+    display: flex;
+    min-width: var(--logo);
+    justify-content: center;
+    overflow: auto;
+}
+
 
 .header h1{
     font-size: 2rem;
@@ -24,15 +47,22 @@ body{
     font-style: italic;
 }
 
+.header{
+    height: var(--header);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
 
 .body{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    align-items:flex-start;
     background-color: black;
     width: 1200px;
     padding-left: 2rem;
+   
 }
 
 
@@ -49,7 +79,7 @@ fieldset legend{
     margin-left: -2rem;
     padding: 3rem 0 3rem 2rem;
     box-shadow: 0 3px 10px 3px white;
-    background-color: dark
+    
 }
 
 
@@ -75,7 +105,22 @@ fieldset{
 input{
     display: block;
     width: 100%;
+    border-radius: 5px;
 }
+
+
+.bottom{
+    height: var(--bottom);
+    padding-top: 2rem;
+    overflow: auto;
+}
+
+
+
+
+
+
+
 
 
 
