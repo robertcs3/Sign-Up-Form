@@ -37,43 +37,45 @@
     
 
             <div class="form">
-                <form action="some page" method="post">
+                <form id="my-form" action="https://www.youtube.com/watch?v=wXMD6wmcwvE" method="post">
                     <fieldset>
                         <legend>Let's do this!</legend>
                             <div class="left">
                                 <div>
-                                    <label for="first-name">FIRST NAME</label>
-                                    <input type="text" id="first-name" name="first-name">
+                                    <label for="first-name">*FIRST NAME</label>
+                                    <input type="text" id="first-name" name="first-name" required>
                                 </div>
                 
                                 <div>
-                                    <label for="email">EMAIL</label>
-                                    <input type="email" id="email" name="email">
+                                    <label for="email">*EMAIL</label>
+                                    <input type="email" id="email" name="email"
+                                     pattern="+@example\.com"  placeholder="example@email.com" required>
                                 </div>
                                 <div>
-                                    <label for="password">PASSWORD</label>
-                                    <input type="password" id="pasword" name="password">
+                                    <label for="password">*PASSWORD</label>
+                                    <input type="password" id="pasword" 
+                                    name="password" minlength="6" required>
                                 </div>
                             </div>
                 
                         <div class="right">
                 
                                 <div>
-                                    <label for="last-name">LAST NAME</label>
-                                    <input type="text" id="last-name" name="last-name">
+                                    <label for="last-name">*LAST NAME</label>
+                                    <input type="text" id="last-name" name="last-name" required>
                                 </div>
                 
                                 <div>
                                     <label for="phone-number">PHONE NUMBER</label>
-                                    <input type="tel" id="phone-number" name="phone-number">
+                                    <input type="tel" id="phone-number" name="phone-number" minlength="10">
                                 </div>
                 
                                 <div>
-                                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                                    <input type="confirm-password" id="confirm-password" name="confirm-password">
+                                    <label for="confirm-password">*CONFIRM PASSWORD</label>
+                                    <input type="confirm-password" id="confirm-password"
+                                     name="confirm-password" minlength="6" required>
                                 </div>
                         </div>
-                
                 
                       </fieldset>
                 </form>
@@ -83,9 +85,15 @@
         
         <div class="bottom">
            
-            <div>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? Log in</p>
+            <div id="button">
+                <button type="submit" form="my-form">Create Account</button>
+            </div>
+
+            <p>Already have an account?</p>
+
+            <div id="log-in">
+                
+                <p>Log in</p>
             </div>
         </div>
         
